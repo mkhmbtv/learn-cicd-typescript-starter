@@ -17,5 +17,5 @@ jobs:
         with:
           node-version: 22
 
-      - name: Force Failure
-        run: (exit 1)
+      - name: Get node version
+        run: node --version
