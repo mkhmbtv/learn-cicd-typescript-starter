@@ -19,7 +19,7 @@ jobs:
           cache: npm
 
       - name: Upgrade npm
-        run: npm install -g npm@11.7.0
+        run: npm install -g npm@latest
 
       - name: Print versions
         run: |
