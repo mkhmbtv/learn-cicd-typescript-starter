@@ -29,7 +29,7 @@ describe("getAPIKey", () => {
     const headers: IncomingHttpHeaders = {
       authorization: "ApiKey my-secret-key",
     };
-    expect(getAPIKey(headers)).toBe("my-test-key");
+    expect(getAPIKey(headers)).toBe("my-secret-key");
   });
 
   it("returns only the first token after ApiKey prefix, ignoring extra parts", () => {
